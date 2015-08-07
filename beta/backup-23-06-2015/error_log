@@ -1,0 +1,3 @@
+[23-Jun-2015 06:59:33 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/maruthicabs/public_html/beta/customer_details.php on line 8
+[23-Jun-2015 07:06:23 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/maruthicabs/public_html/beta/customer_details.php on line 8
+[23-Jun-2015 07:27:39 UTC] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, boolean given in /home/maruthicabs/public_html/beta/customer_details.php on line 8

@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TRAVELS</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<link type="text/css" href="css/jquery-ui-1.8.19.custom.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.19.custom.min.js"></script>
+<script>
+         jQuery(window).load(function(){
+          $("#preloader").fadeOut("slow");
+         
+         });
+      </script>
+<script type="text/javascript">
+$(function() {
+var dates = $("#txtFrom, #txtTo").datepicker({
+//minDate: '0',
+//maxDate: '',
+onSelect: function(selectedDate) {
+var option = this.id == "txtFrom" ? "minDate" : "maxDate",
+instance = $(this).data("datepicker"),
+date = $.datepicker.parseDate(
+instance.settings.dateFormat ||
+$.datepicker._defaults.dateFormat,
+selectedDate, instance.settings);
+dates.not(this).datepicker("option", option, date);
+}
+});
+});
+</script>
+
+</head>
+<body>
+<div id="preloader"> <img src="images/preloader.gif" alt="Preloader"> </div>
+<section class="main">
+  <header>
+    <div class="sub-header">
+      <div class="logo"><a href="index.html"><img src="images/logo.png"/></a></div>
+      <div class="clear"></div>
+    </div>
+  </header>
+  <div class="border-bg"><img src="images/line.png"/></div>
+  <div class="contact-div">
+    <div class="content">
+      <div class="offer-left-div">
+        <div id='cssmenu'>
+          <ul>
+            <li><a><span>Navigation</span></a></li>
+            <li> <i class="fa fa-dashboard icon1"></i><a><span>Dashboard</span></a>
+              <ul>
+                <li><i class="fa fa-map-marker icon1"></i><a href="map.html">Map</a></li>
+                <li><i class="fa fa-car icon1"></i> <a href="admin.html"> Running Trip</a></li>
+                <li><i class="fa fa-cab icon1"></i><a href="available-cabs.html">Available Cabs</a></li>
+              </ul>
+            </li>
+            <li> <i class="fa fa-keyboard-o icon"></i><a><span>Add Trips</span></a>
+              <ul>
+                <li><i class="fa fa-plus icon1"></i><a href="new-trip.html">New Trip</a></li>
+                <li><i class="fa fa-ticket icon1"></i><a href="pending-trip.html">Pending Trips</a></li>
+              </ul>
+            </li>
+            <li> <i class="fa fa-keyboard-o icon"></i><a><span>Trip History</span></a>
+              <ul>
+                <li><i class="fa fa-calendar icon1"></i><a href="today.html">Today</a></li>
+                <li><i class="fa fa-check icon1"></i><a href="completed-trips.html">Completed Trips</a></li>
+              </ul>
+            </li>
+            <li> <i class="fa fa-keyboard-o icon"></i><a><span>Drivers</span></a>
+              <ul>
+                <li><i class="fa fa-plus icon1"></i><a href="add-drivers.html">Add Drivers</a></li>
+                <li><i class="fa fa-eye icon1"></i><a href="view-drivers.html">View Drivers</a></li>
+              </ul>
+            </li>
+             <li  class="has-sub active"> <i class="fa fa-keyboard-o icon"></i><a><span>Cabs</span></a>
+              <ul style="display:block;">
+                <li class="text-bold"><i class="fa fa-plus icon1"></i><a href="add-cabs.html">Add Cabs</a></li>
+                <li><i class="fa fa-sign-in icon1"></i><a href="assign-cabs.html">Assign Cabs</a></li>
+                 <li><i class="fa fa-eye icon1"></i><a href="view-cabs.html">View Cabs</a></li>
+              </ul>
+            </li>
+            <li> <i class="fa fa-keyboard-o icon"></i><a><span>Roles</span></a>
+              <ul>
+                <li><i class="fa fa-plus icon1"></i><a href="add-roles.html">Add Roles</a></li>
+                <li><i class="fa fa-edit icon1"></i><a href="edit-roles.html">Edit Roles</a></li>
+              </ul>
+            </li>
+            <li> <i class="fa fa-keyboard-o icon"></i><a><span>Report</span></a>
+              <ul>
+                <li><i class="fa fa-level-up icon1"></i><a href="trip-wise.html">Trip Wise</a></li>
+                <li><i class="fa fa-user icon1"></i><a href="driver-wise.html">Driver Wise</a></li>
+                <li><i class="fa fa-map-marker icon1"></i><a href="location-wise.html">Location Wise</a></li>
+                <li><i class="fa fa-car icon1"></i><a href="vehicle-wise.html">Vehile Type Wise</a></li>
+                <li><i class="fa fa-user icon1"></i><a href="customer-wise.html">Customer Wise</a></li>
+              </ul>
+            </li>
+            <li> <i class="fa fa-keyboard-o icon"></i><a><span>Feed Back</span></a>
+              <ul>
+                <li><i class="fa fa-user icon1"></i><a href="driver-feedback.html">Drivers Feedback</a></li>
+                <li><i class="fa fa-user icon1"></i><a href="customer-feedback.html">Customer Feedback</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="tech"><a href="http://tiqs.in/"><br />
+          Powered By<img src="images/tiqs.png" /></a> </div>
+      </div>
+      <div class="offer-right-div">
+        <div class="content-total-box" style="width:60%; margin-left:5%;">
+          <h3>Travels</h3>
+          <div class="main-table">
+            <div class="table-header">
+              <h4> Add Cabs</h4>
+              <div class="clear"></div>
+            </div>
+            <div class="table2" style="width:80%;margin:0px auto;">
+              <form class="upload-form">
+              <div class="upload-pro">
+                    <label>Owned By </label>
+                    <div class="redio">
+                      <div class="radio-box">
+                        <label class="SingleClick"><span>Self </span>
+                          <input type="radio"  name="m" />
+                        </label>
+                      </div>
+                      <div class="radio-box">
+                        <label class="flip"><span>Driver</span>
+                          <input type="radio" name="m" />
+                        </label>
+                        <div class="add-driver-inp"><input type="text" placeholder="Driver Name" /></div>
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                  </div>
+                  <div class="upload-pro">
+                  <label>Vehicle Type </label>
+                  <select>
+                    <option>-- Select Car Type --</option>
+                    <option>Santro</option>
+                    <option>indica</option>
+                    <option>suv</option>
+                  </select>
+                  <div class="clear"></div>
+                </div>
+                <div class="upload-pro">
+                  <label>Vehicle Brand</label>
+                  <input type="text" placeholder="Vehicle Brand "/>
+                  <div class="clear"></div>
+                </div>
+                
+                <div class="upload-pro">
+                  <label>Vehicle Modal </label>
+                  <input type="text" placeholder=" Vehicle Modal" />
+                  <div class="clear"></div>
+                </div>
+                <div class="upload-pro">
+                  <label>Vehicle Reg No</label>
+                  <input type="text" placeholder="Vehicle Reg No"/>
+                  <div class="clear"></div>
+                </div>
+                <div class="upload-pro">
+                  <label>Vehicle chass No</label>
+                  <input type="text" placeholder="Vehicle chass No"/>
+                  <div class="clear"></div>
+                </div>
+                
+                <br />
+                <label >
+                  <input type="button" value="submit" class="sub" />
+                </label>
+                <br />
+              </form>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</section>
+
+<script type="text/javascript">
+     $(document).ready(function() {
+		$(".flip").click(function() {
+			$(".add-driver-inp").toggle("");
+		});
+	});
+
+</script>
+</body>
+</html>
